@@ -7,9 +7,9 @@
     <link href="../src/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
         *{
-            font-family: "Nunito", sans-serif;
+            font-family: "Lexend Deca", sans-serif;
         }
     </style>
 </head>
@@ -17,12 +17,14 @@
     <header class="bg-customWhite w-full h-18 flex flex-col justify-center">
         <nav class="flex justify-between align-middle">
             <div class="w-44 ml-4">
-                <img src="../assets/logo.png" alt="logo" class="w-full">
+                <a href="#">
+                    <img src="../assets/logo.png" alt="logo" class="w-full">
+                </a>
             </div>
             <div id="nav-btn" class="mr-4 cursor-pointer">
                 <i class="fa-solid fa-bars text-3xl font-extralight"></i>
             </div>
-            <div id="navbar" class="bg-gray-900 text-white absolute top-0 w-[95vw] h-[100vh] hidden justify-between lg:hidden">
+            <div id="navbar" class="bg-gray-900 text-white absolute top-0 w-[95vw] h-[100vh] hidden justify-between lg:hidden z-[2]">
                 <ul class="inline-flex flex-col gap-y-6 text-3xl ml-6 group [&>*]:hover:underline [&>*]:cursor-pointer mt-6">
                     <li>Home</li>
                     <li>Services</li>
@@ -30,11 +32,40 @@
                     <li>About</li>
                 </ul>
                 <div id="cross-btn" class="cursor-pointer mr-4 mt-4">
-                    <i class="fa-solid fa-xmark text-white text-4xl"></i>
+                    <i class="fa-solid fa-xmark text-white text-4xl sm:text-5xl"></i>
                 </div>
             </div>
         </nav>
     </header>
+
+    <!-- Hero-section -->
+    <div class="w-full h-[85vh] bg-[url(../assets/hero-img-mobile.jpg)] bg-cover text-white relative flex items-end">
+
+        <!-- Mask on bg-image -->
+        <div class="absolute top-0 w-full h-[85vh] bg-black opacity-45 z-0"></div>
+
+        <!-- hero-content -->
+        <div class="gap-12 z-[1] flex flex-col items-center mb-12">
+
+            <!-- first-box -->
+            <div>
+                <h1 class="text-4xl sm:text-7xl text-center font-bold">
+                    Madhyapur Fitness Club
+                </h1>
+                <h2 class="text-3xl sm:text-5xl italic mt-2 ml-4">- Your Neighborhood Gym!</h2>
+            </div>
+
+            <!-- second-Box -->
+            <div class="text-base text-left sm:text-xl font-light flex flex-col items-center">
+                <span class="italic mx-4">Stay fit, stay strong—right here in Madhyapur Thimi. Friendly trainers, top gear, and a supportive community...</span>
+                <!-- CTA -->
+                <div class="mt-10 flex flex-col text-xl sm:text-3xl gap-8">
+                    <span class="font-bold text-center">Come by today and start your fitness journey!</span>
+                    <button class="font-bold p-1 border rounded-3xl w-full text-customWhite bg-customRed cursor-pointer hover:underline">Join Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <script src="index.js"></script>
 </body>
