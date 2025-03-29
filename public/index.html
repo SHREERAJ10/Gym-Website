@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fitness - Home</title>
+    <link href="../src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+        *{
+            font-family: "Nunito", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-customWhite w-full h-18 flex flex-col justify-center">
+        <nav class="flex justify-between align-middle">
+            <div class="w-44 ml-4">
+                <img src="../assets/logo.png" alt="logo" class="w-full">
+            </div>
+            <div id="nav-btn" class="mr-4 cursor-pointer">
+                <i class="fa-solid fa-bars text-3xl font-extralight"></i>
+            </div>
+            <div id="navbar" class="bg-gray-900 text-white absolute top-0 w-[95vw] h-[100vh] hidden justify-between lg:hidden">
+                <ul class="inline-flex flex-col gap-y-6 text-3xl ml-6 group [&>*]:hover:underline [&>*]:cursor-pointer mt-6">
+                    <li>Home</li>
+                    <li>Services</li>
+                    <li>Testimonials</li>
+                    <li>About</li>
+                </ul>
+                <div id="cross-btn" class="cursor-pointer mr-4 mt-4">
+                    <i class="fa-solid fa-xmark text-white text-4xl"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <script src="index.js"></script>
+</body>
+</html>
