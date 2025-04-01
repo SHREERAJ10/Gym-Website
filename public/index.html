@@ -14,6 +14,8 @@
     </style>
 </head>
 <body>
+
+    <!-- Heading-Section -->
     <header class="bg-customWhite w-full h-18 flex flex-col justify-center">
         <nav class="flex justify-between items-center">
             <div class="w-44 sm:w-48 lg:w-52 ml-4">
@@ -36,7 +38,7 @@
                 </div>
             </div>
             <!-- CTA -->
-            <div class="hidden xl:block text-xl hover:scale-105 mr-4">
+            <div class="hidden xl:block text-xl hover:transition-transform hover:ease-in-out hover:duration-150 hover:scale-105 mr-4">
                 <button class="font-medium p-2 border rounded-3xl w-full text-customWhite bg-customRed cursor-pointer hover:underline">Join Now</button>
             </div>
         </nav>
@@ -74,13 +76,60 @@
                     <!-- CTA -->
                     <div class="mt-10 flex flex-col text-xl sm:text-3xl lg:text-4xl gap-8 xl:flex-row xl:justify-between xl:w-full">
                         <span class="font-bold text-center xl:font-medium">Come by today and start your fitness journey!</span>
-                        <button class="font-bold p-1 border rounded-3xl w-full text-customWhite bg-customRed cursor-pointer hover:underline xl:w-auto xl:text-3xl xl:p-2 xl:border-none xl:hover:scale-105">Join Now</button>
+                        <button class="font-bold p-1 border rounded-3xl w-full text-customWhite bg-customRed cursor-pointer  hover:transition-transform hover:ease-in-out hover:duration-150  hover:underline xl:w-auto xl:text-3xl xl:p-2 xl:border-none xl:hover:scale-105">Join Now</button>
                     </div>
                 </div>
-                
             </div>
         </div>
     </div>
+
+    <!-- Services-section -->
+    <section id="services" class="mt-4 w-full flex flex-col items-center gap-3 pb-4 xl:gap-6">
+            <h1 class="text-4xl sm:text-7xl font-bold text-center">Services</h1>
+            <!-- services-cards -->
+            <div id="card-container" class="w-[80%] flex flex-col gap-8 p-2 [&>*]:transition-transform [&>*]:ease-in-out [&>*]:duration-150 [&>*]:hover:scale-105 [&>*]:cursor-pointer xl:w-full xl:flex-row xl:justify-between">
+                <div class=" bg-anotherWhite w-full flex flex-col items-center gap-2 p-2 rounded-3xl border border-black shadow-xl shadow-black">
+
+                    <div class="h-[70%]">
+                        <img src="../assets/personal-training.jpg" alt="personal training" class="w-full h-full object-cover rounded-tl-2xl rounded-tr-2xl">
+                    </div>
+                    <!-- content -->
+                    <div class="font-light w-full h-full sm:text-xl flex flex-col justify-between items-center">
+                        <h2 class="text-left text-2xl sm:text-4xl font-bold">Personal Training</h2>
+                        <p class="text-cardContent">
+                            Get one-on-one coaching tailored to your goals.  
+                        </p>
+                        <button class="font-medium p-2 border rounded-3xl w-full text-customWhite bg-customRed cursor-pointer hover:underline">Learn More</button>
+                    </div>
+                </div>
+                <div class="bg-anotherWhite w-full flex flex-col items-center gap-2 p-2 rounded-3xl border border-black shadow-xl shadow-black">
+                    <div class="h-[70%]">
+                        <img src="../assets/strength-training.jpg" alt="personal training" class="w-full h-full object-cover rounded-tl-2xl rounded-tr-2xl">
+                    </div>
+                    <!-- content -->
+                    <div class="font-light w-full h-full sm:text-xl flex flex-col items-center justify-between">
+                        <h2 class="text-left text-2xl sm:text-4xl font-bold">Strength Training</h2>
+                        <p class="text-cardContent">
+                            Build muscle with top-tier equipment and expert guidance
+                        </p>
+                        <button class="font-medium p-2 border rounded-3xl w-full text-customWhite bg-customRed cursor-pointer hover:underline mt-2">Learn More</button>
+                    </div>
+                </div>
+                <div class="bg-anotherWhite w-full flex flex-col items-center gap-2 p-2 rounded-3xl border border-black shadow-xl shadow-black">
+                    <div class="h-[70%]">
+                        <img src="../assets/group-training.jpg" alt="personal training" class="w-full h-full object-cover rounded-tl-2xl rounded-tr-2xl">
+                    </div>
+                    <!-- content -->
+                    <div class="font-light w-full h-full sm:text-xl flex flex-col items-center justify-between">
+                        <h2 class="text-left text-2xl sm:text-4xl font-bold">Group Fitness Classes</h2>
+                        <p class="text-cardContent">
+                            Fun and energetic workouts for all levels
+                        </p>
+                        <button class="font-medium p-2 border rounded-3xl w-full text-customWhite bg-customRed cursor-pointer hover:underline mt-2">Learn More</button>
+                    </div>
+                </div>        
+            </div>
+    </section>
     
     <script src="index.js"></script>
 </body>
