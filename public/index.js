@@ -15,3 +15,19 @@ closeNav.onclick= ()=>{
     navDrawer.classList.remove("flex");
     openNav.classList.remove("hidden");
 };
+
+let prevScrollPos = window.pageYOffset;
+const navbar = document.querySelector("#navbar");
+
+window.addEventListener("scroll",()=>{
+    const curScrollPos = window.pageYOffset;
+
+    if(curScrollPos > prevScrollPos && curScrollPos > 50){
+        navbar.classList.add("nav-hidden");
+    }
+    else{
+        navbar.classList.remove("nav-hidden");
+    }
+
+    prevScrollPos = curScrollPos;
+});

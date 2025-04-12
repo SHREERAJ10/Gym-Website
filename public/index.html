@@ -15,13 +15,16 @@
         * {
             font-family: "Lexend Deca", sans-serif;
         }
+        .nav-hidden {
+            transform: translateY(-100%);
+          }
     </style>
 </head>
 
 <body>
 
     <!-- Heading-Section -->
-    <header class="bg-customWhite w-full h-18 flex flex-col justify-center">
+    <header id = "navbar" class="bg-customWhite w-full h-18 flex flex-col justify-center fixed top-0 left-0 transition-transform duration-300 z-10">
         <nav class="flex justify-between items-center">
             <div class="w-44 sm:w-48 lg:w-52 ml-4">
                 <a href="#">
