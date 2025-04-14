@@ -9,13 +9,16 @@
     --color-anotherWhite: #f5f5f5;
     --color-customGray:#F5F5F5;
     --color-footerColor:#242424;
-    /* services page */
+    /* SERVICES PAGE */
     --color-lightGray:#F9FAFB;
     --color-darkGray:#1F2937;
-
-    /*Not In Use*/
     --color-charcoal: #2D3748;
     --color-softWhite:#F7FAFC;
+    /* ABOUT PAGE */
+    --color-neutralGray:#6B7280;
+    --color-platinum:#F1F5F9;
+    
+    /*Not In Use*/
     --color-warmGray:#E2E8F0;
     /*#FFA41A*/
   }
