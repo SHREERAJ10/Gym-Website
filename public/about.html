@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madhyapur Fitness Club - Home</title>
+    <link href="../src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        * {
+            font-family: "Lexend Deca", sans-serif;
+        }
+        .nav-hidden {
+            transform: translateY(-100%);
+          }
+    </style>
+</head>
+
+<body>
+
+    <!-- Heading-Section -->
+    <header id = "navbar-heading" class="bg-white w-full h-16 flex flex-col justify-center sticky top-0 transition-transform duration-300 z-10">
+        <nav class="flex justify-between items-center">
+            <div class="w-44 sm:w-48 lg:w-52 ml-4">
+                <a href="#">
+                    <img src="../assets/logo.png" alt="logo" class="w-full">
+                </a>
+            </div>
+            <div id="nav-btn" class="mr-4 cursor-pointer xl:hidden">
+                <i class="fa-solid fa-bars text-3xl sm:text-4xl lg:text-5xl font-extralight"></i>
+            </div>
+            <div id="navbar"
+                class="bg-gray-900 text-white absolute top-0 w-[95vw] h-[100vh] justify-between hidden z-[2] xl:flex xl:h-18 xl:w-[60vw] xl:text-black xl:relative xl:items-center xl:bg-transparent">
+                <ul
+                    class="inline-flex flex-col gap-y-6 text-3xl ml-6 group [&>*]:hover:underline [&>*]:cursor-pointer mt-6 xl:w-full xl:flex xl:flex-row xl:justify-between xl:items-center xl:m-0 xl:text-xl xl:font-light">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+                <div id="cross-btn" class="cursor-pointer mr-4 mt-4 xl:hidden">
+                    <i class="fa-solid fa-xmark text-white text-4xl sm:text-5xl"></i>
+                </div>
+            </div>
+            <!-- CTA -->
+            <div
+                class="hidden xl:block text-xl hover:transition-transform hover:ease-in-out hover:duration-150 hover:scale-105 mr-4">
+                <button
+                    class="font-medium p-2 border rounded-3xl w-full text-customWhite bg-customRed cursor-pointer hover:underline">Join
+                    Now</button>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="pt-6 pb-8 grid grid-cols-1 lg:grid-cols-[1fr_auto] grid-rows-1 bg-lightGray text-darkGray">
+            <!-- content -->
+            <div class="flex flex-col justify-evenly px-4 lg:px-0 lg:pl-4">
+                <!-- main-heading -->
+                <h1 class="text-4xl font-semibold">More than Just A Gym</h1>
+                <p class="text-lg text-justify">
+                    We're not just a gym — we're a community that believes in real transformation, inside and out. Built with passion and fueled by purpose, we've created a space where anyone — no matter where they start — can push their limits, grow stronger, and become their best selves. From personalized training to supportive group classes, our goal is simple: help you show up, level up, and never look back.
+                </p>
+            </div>
+
+            <!-- image -->
+             <div class="flex justify-center items-center pt-12">
+                <img src="../assets/about.jpeg" alt="" class="w-[80%] rounded-2xl border-2 border-gray-300 shadow-lg">
+             </div>
+    </section>
+
+    <!-- why choose us -->
+    <section class="flex flex-col justify-center items-center gap-6 py-4 bg-test text-text bg-neutralGray text-platinum">
+        <h2 class="text-3xl font-semibold">Why Choose Us?</h2>
+        <div class="px-4">
+            <ul class="w-full flex flex-col lg:flex-row lg:justify-between gap-12">
+                <li>
+                    <h3 class="font-bold text-2xl">🏆 Certified Trainers</h3>
+                    <p class="font-light">Our team is stacked with experienced, certified professionals who care about your progress just as much as you do.</p>
+                </li>
+                <li>
+                    <h3 class="font-bold text-2xl">💯 Personalized Plans</h3>
+                    <p class="font-light">One-size-fits-all? Not here. Every plan is crafted to match your specific goals, body type, and schedule.</p>
+                </li>
+                <li>
+                    <h3 class="font-bold text-2xl">🕒 Flexible Scheduling</h3>
+                    <p class="font-light">Whether you're an early riser or a night owl, our wide range of class times means there's always time to train.</p>
+                </li>
+                <li>
+                    <h3 class="font-bold text-2xl">💥 Community Driven</h3>
+                    <p class="font-light">You're not just signing up for workouts — you're joining a tribe that lifts you up every step of the way.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Trainers -->
+    <section class="flex flex-col">
+        <div class="bg-lightGray text-darkGray flex flex-col py-8 px-4 justify-center items-center">
+            <h2 class="text-3xl font-semibold">Meet the team</h2>
+            <p class="text-lg text-justify">Meet the faces behind the hustle. Each trainer here brings not just expertise, but real energy, motivation, and care to every session. Their mission? Helping you crush your fitness goals and enjoy the process.</p>
+        </div>
+
+        <div class="w-full p-6 gap-8 flex flex-col justify-center items-center md:[&>*]:w-[70%] xl:flex-row xl:[&>*]:max-w-[500px]">
+            <!-- Trainer -->
+            <div class="w-full bg-anotherWhite flex flex-col gap-2 rounded-3xl border border-black shadow-xl shadow-black p-2">
+                <h3 class="text-xl font-semibold">Emily Brooks - HIIT Specialist</h3>
+                <p>Known for her killer workouts and contagious energy. Expect to sweat and smile.</p>
+                <div class="px-6">
+                    <img src="../assets/trainer-1.jpeg" alt="" class="w-full rounded-2xl">
+                </div>
+            </div>
+    
+            <div class="w-full bg-anotherWhite flex flex-col gap-2 rounded-3xl border border-black shadow-xl shadow-black p-2">
+                <h3 class="text-xl font-semibold">Ryan Cooper - Strength & Conditioning Coach</h3>
+                <p>A results-driven coach who believes that consistency beats intensity.</p>
+                <div class="px-6">
+                    <img src="../assets/trainer-2.jpeg" alt="" class="w-full rounded-2xl">
+                </div>
+            </div>
+    
+            <div class="w-full bg-anotherWhite flex flex-col gap-2 rounded-3xl border border-black shadow-xl shadow-black p-2">
+                <h3 class="text-xl font-semibold">Jake Matthews - HIIT Specialist</h3>
+                <p>Focused on sustainable progress, smart recovery, and long-term gains.</p>
+                <div class="px-6">
+                    <img src="../assets/trainer-3.jpeg" alt="" class="w-full rounded-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="w-full flex flex-col justify-center items-center border border-y-gray-500 mt-10 pt-2 p-4 gap-2">
+        <p class="text-lg">Still scrolling? Your gains are waiting.</p>
+        <button class="font-bold p-1 hover:outline-2 rounded-3xl w-full text-customWhite bg-customRed cursor-pointer  hover:transition-all hover:ease-in-out hover:duration-150 hover:bg-white hover:text-customRed hover:outline-customRed xl:w-auto xl:text-2xl xl:p-3">Join Now</button>
+     </div>
+
+    <!-- Footer -->
+    <footer class="w-full lg:h-[15vh] p-2 bg-footerColor text-white flex flex-col lg:flex-row gap-4 lg:justify-around lg:items-center">
+        <div>
+            <a href="#">
+                <h2 class="font-bold text-base lg:text-2xl">Madhyapur Fitness Club</h2>
+            </a>
+        </div>
+        <div class="font-light text-sm flex flex-col gap-1">
+            <ul class="flex gap-6 [&>*]:hover:underline">
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <p>&copy; 2025 Madhyapur Fitness Club. All rights reserved.</p>
+        </div>
+        <div class="font-light text-sm lg:text-base">
+            <p>Contact: madhypaurfitnessclub@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
