@@ -4,13 +4,18 @@
   /*In Use*/
     --color-customWhite: #FDFBEE;
     --color-cardContent: #3B3C36;
-    --color-snow: #FFFAFA.;
+    --color-snowColor: #FFFAFA;
     --color-customRed: #ff3310;
     --color-anotherWhite: #f5f5f5;
     --color-customGray:#F5F5F5;
     --color-footerColor:#242424;
+    /* services page */
+    --color-lightGray:#F9FAFB;
+    --color-darkGray:#1F2937;
+
     /*Not In Use*/
-    --color-customGreen: #015551;
-    --color-testWhite:#FFA41A;
+    --color-charcoal: #2D3748;
+    --color-softWhite:#F7FAFC;
+    --color-warmGray:#E2E8F0;
     /*#FFA41A*/
   }

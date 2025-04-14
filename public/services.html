@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madhyapur Fitness Club - Services</title>
+    <link href="../src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        * {
+            font-family: "Lexend Deca", sans-serif;
+        }
+        .nav-hidden {
+            transform: translateY(-100%);
+          }
+    </style>
+</head>
+
+<body>
+
+    <!-- Heading-Section -->
+    <header id = "navbar-heading" class="bg-snowColor w-full h-18 flex flex-col justify-center sticky top-0 transition-transform duration-300 z-10">
+        <nav class="flex justify-between items-center">
+            <div class="w-44 sm:w-48 lg:w-52 ml-4">
+                <a href="#">
+                    <img src="../assets/logo.png" alt="logo" class="w-full">
+                </a>
+            </div>
+            <div id="nav-btn" class="mr-4 cursor-pointer xl:hidden">
+                <i class="fa-solid fa-bars text-3xl sm:text-4xl lg:text-5xl font-extralight"></i>
+            </div>
+            <div id="navbar"
+                class="bg-gray-900 text-white absolute top-0 w-[95vw] h-[100vh] justify-between hidden z-[2] xl:flex xl:h-18 xl:w-[60vw] xl:text-black xl:relative xl:items-center xl:bg-transparent">
+                <ul
+                    class="inline-flex flex-col gap-y-6 text-3xl ml-6 group [&>*]:hover:underline [&>*]:cursor-pointer mt-6 xl:w-full xl:flex xl:flex-row xl:justify-between xl:items-center xl:m-0 xl:text-xl xl:font-light">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li>Gallery</li>
+                    <li>About</li>
+                </ul>
+                <div id="cross-btn" class="cursor-pointer mr-4 mt-4 xl:hidden">
+                    <i class="fa-solid fa-xmark text-white text-4xl sm:text-5xl"></i>
+                </div>
+            </div>
+            <!-- CTA -->
+            <div
+                class="hidden xl:block text-xl hover:transition-transform hover:ease-in-out hover:duration-150 hover:scale-105 mr-4">
+                <button
+                    class="font-medium p-2 border rounded-3xl w-full text-customWhite bg-customRed cursor-pointer hover:underline">Join
+                    Now</button>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Services -->
+    <main class="w-full flex flex-col items-center bg-snow gap-y-12">
+
+        <!-- main-heading -->
+        <h1 class="text-4xl font-semibold pt-12">Our Services</h1>
+        
+        <!-- Personal-training -->
+        <div class="w-full grid grid-cols-1 lg:grid-cols-[1fr_auto] grid-rows-2 p-4 bg-lightGray text-darkGray">
+
+            <!-- grid-item-1 -->
+            <div class="flex flex-col lg:row-span-2">
+                <h2 class="text-3xl font-semibold">1. Personal Training</h2>
+                    <div class="flex flex-col grow justify-around text-lg">
+                        <p class="text-justify">
+                            <span>One-on-one coaching, fully customized to your goals.</span>
+                            Work closely with our certified personal trainers who will create a workout and nutrition plan tailored just for you. Each session is goal-focused, whether it's weight loss, muscle gain, or improving strength and endurance.
+                        </p>
+
+                        <ul class="list-disc list-inside">
+                        <li>
+                            <span>Schedule: </span>
+                            Flexible timings between 6 AM - 8 PM (Mon-Sat)
+                        </li>
+                        <li>
+                            <span>Session Duration: </span>
+                            60 minutes
+                        </li>
+                        <li>
+                            <span>Trainer: </span>
+                            Choose your preferred male/female trainer
+                        </li>
+                        <li>
+                            <span>Progress Tracking: </span>
+                            Weekly assessments included
+                        </li>
+                        <li>
+                            <span>Pricing:</span>
+                            <ul class="[&>*]:font-semibold list-disc list-inside ml-8">
+                                <li>NRs. 1,500/session</li>
+                                <li>NRs. 12,000/month <span class="font-light">(3 sessions/week)</span>
+                                </li>
+                                <li>NRs. 20,000/month <span class="font-light">(5 sessions/week)</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <p class="italic">Best for individuals who want a focused, efficient, and guided transformation.</p>
+                    <button
+                        class="font-medium p-2 border rounded-3xl w-full text-customWhite bg-customRed cursor-pointer hover:underline mt-2 lg:w-44 lg:transition-transform ease-in-out duration-150 lg:hover:scale-105">Join Now</button>
+                </div>
+            </div>
+
+            <!-- grid-item-2 -->
+            <div class="lg:row-span-2 flex justify-center items-center lg:justify-end">
+                <div class="w-full flex justify-center items-center lg:w-[80%]">
+                    <img src="../assets/service-1.jpeg" alt="" class="object-cover rounded-2xl border-2 border-gray-300 shadow-lg">
+                </div>
+            </div>
+        </div>
+
+        <!-- Strength-training -->
+        <div class="w-full grid lg:grid-cols-[auto_1fr] grid-rows-2 p-4 gap-y-4 bg-charcoal text-softWhite">
+
+            <!-- grid-item-1 -->
+            <div class="row-start-2 row-end-3 lg:row-span-2 flex lg:justify-start">
+                <div class="w-full flex justify-center lg:w-[80%]">
+                    <img src="../assets/service-2.webp" alt="" class="object-cover rounded-2xl border-2 border-warmGray shadow-xl">
+                </div>
+            </div>
+
+            <!-- grid-item-2 -->
+            <div class="flex flex-col lg:row-span-2">
+                <h2 class="text-3xl font-semibold">2. Strength Training</h2>
+                    <div class="flex flex-col grow justify-around text-lg">
+                        <p class="text-justify">
+                            <span>Progressive training to help you build real strength and muscle.</span>
+                            Whether you're a beginner or intermediate lifter, this structured plan helps you master core lifts, improve posture, and build a strong physique.
+                        </p>
+
+                        <ul class="list-disc list-inside">
+                        <li>
+                            <span>Includes: </span>
+                            Access to strength area + program template + monthly consultation
+                        </li>
+                        <li>
+                            <span>Equipment: </span>
+                            Barbells, dumbbells, kettlebells, resistance machines
+                        </li>
+                        <li>
+                            <span>Open Gym Hours: </span>
+                            6 AM - 9 PM (Mon-Sat)
+                        </li>
+                        <li>
+                            <span>Trainers Available: </span>
+                            For form correction and assistance
+                        </li>
+                        <li>
+                            <span>Pricing:</span>
+                            <ul class="[&>*]:font-semibold list-disc list-inside ml-8">
+                                <li>NRs. 2,000/month <span class="font-light">(gym access only)</span></li>
+                                <li>NRs. 3,500/month <span class="font-light">(with monthly consultation)</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <p class="italic">Ideal for gym-goers looking to train independently with expert structure.</p>
+                    <button
+                        class="font-medium p-2 border rounded-3xl w-full text-customWhite bg-customRed cursor-pointer hover:underline mt-2 lg:w-44 lg:transition-transform ease-in-out duration-150 lg:hover:scale-105">Join Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Group-Fitness-Classes -->
+
+        <div class="w-full grid grid-cols-1 lg:grid-cols-[1fr_auto] grid-rows-2 p-4 lg:gap-x-16 bg-lightGray text-darkGray">
+
+            <!-- grid-item-1 -->
+            <div class="flex flex-col lg:row-span-2">
+                <h2 class="text-3xl font-semibold">3. Group Fitness Classes</h2>
+                    <div class="flex flex-col grow justify-around text-lg">
+                        <p class="text-justify">
+                            <span>Fun, energetic classes designed to keep you motivated.</span>
+                            Train in a lively group setting with structured workouts led by expert instructors. Perfect for those who enjoy community support and high energy.
+                        </p>
+
+                        <ul class="list-disc list-inside">
+                        <li>
+                            <span>Class Types: </span>
+                            HIIT, Zumba, Circuit Training, Functional Strength
+                        </li>
+                        <li>
+                            <span>Schedule: </span>
+                            Fixed batch timings (Morning: 6-7 AM, Evening: 6-7 PM)
+                        </li>
+                        <li>
+                            <span>Class Size: </span>
+                            Max 12 people per class
+                        </li>
+                        <li>
+                            <span>Trainers: </span>
+                            Certified group instructors for each session
+                        </li>
+                        <li>
+                            <span>Pricing:</span>
+                            <ul class="[&>*]:font-semibold list-disc list-inside ml-8">
+                                <li>NRs. 1,200/week <span class="font-light">(3 classes/week)</span></li>
+                                <li>NRs. 3,000/month <span class="font-light">(Unlimited classes)</span>
+                                </li>
+                                <li>Drop-in: <span class="font-light"> NRs. 500/class</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <p class="italic">Best for individuals who want a focused, efficient, and guided transformation.</p>
+                    <button
+                        class="font-medium p-2 border rounded-3xl w-full text-customWhite bg-customRed cursor-pointer hover:underline mt-2 lg:w-44 lg:transition-transform ease-in-out duration-150 lg:hover:scale-105">Join Now</button>
+                </div>
+            </div>
+
+            <!-- grid-item-2 -->
+            <div class="lg:row-span-2 flex lg:justify-end">
+                <div class="w-full flex  items-center justify-center lg:w-full">
+                    <img src="../assets/service-3.jpeg" alt="" class="object-cover rounded-2xl border-2 border-gray-300 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full lg:h-[15vh] p-2 bg-footerColor text-white flex flex-col lg:flex-row gap-4 lg:justify-around lg:items-center lg:mt-4">
+        <div>
+            <a href="#">
+                <h2 class="font-bold text-base lg:text-2xl">Madhyapur Fitness Club</h2>
+            </a>
+        </div>
+        <div class="font-light text-sm flex flex-col gap-1">
+            <ul class="flex gap-6 [&>*]:hover:underline">
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <p>&copy; 2025 Madhyapur Fitness Club. All rights reserved.</p>
+        </div>
+        <div class="font-light text-sm lg:text-base">
+            <p>Contact: madhypaurfitnessclub@gmail.com</p>
+        </div>
+    </footer>
+    
+    <script src="index.js"></script>
+</body>
+</html>
