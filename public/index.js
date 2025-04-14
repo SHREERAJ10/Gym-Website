@@ -1,4 +1,4 @@
-//navbar-logic
+// MOBILE NAVBAR LOGIC
 
 let openNav = document.querySelector("#nav-btn");
 let closeNav = document.querySelector("#cross-btn");
@@ -16,8 +16,10 @@ closeNav.onclick= ()=>{
     openNav.classList.remove("hidden");
 };
 
+// SMART NAVBAR LOGIC
+
 let prevScrollPos = window.pageYOffset;
-const navbar = document.querySelector("#navbar");
+const navbar = document.querySelector("#navbar-heading");
 
 window.addEventListener("scroll",()=>{
     const curScrollPos = window.pageYOffset;
@@ -30,4 +32,12 @@ window.addEventListener("scroll",()=>{
     }
 
     prevScrollPos = curScrollPos;
+});
+
+// JOIN BUTTON EVENT
+
+document.querySelectorAll(".joinBtn").forEach(el =>{
+    el.onclick = ()=>{
+        alert("This is just a practice/dummy website. But Thanks for visiting!\n --- Shreeraj Shrestha");
+    };
 });

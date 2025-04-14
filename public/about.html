@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madhyapur Fitness Club - Home</title>
+    <title>Madhyapur Fitness Club - About</title>
     <link href="../src/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -27,7 +27,7 @@
     <header id = "navbar-heading" class="bg-white w-full h-16 flex flex-col justify-center sticky top-0 transition-transform duration-300 z-10">
         <nav class="flex justify-between items-center">
             <div class="w-44 sm:w-48 lg:w-52 ml-4">
-                <a href="#">
+                <a href="index.html">
                     <img src="../assets/logo.png" alt="logo" class="w-full">
                 </a>
             </div>
@@ -51,7 +51,7 @@
             <div
                 class="hidden xl:block text-xl hover:transition-transform hover:ease-in-out hover:duration-150 hover:scale-105 mr-4">
                 <button
-                    class="font-medium p-2 border rounded-3xl w-full text-customWhite bg-customRed cursor-pointer hover:underline">Join
+                    class="joinBtn font-medium p-2 border rounded-3xl w-full text-customWhite bg-customRed cursor-pointer hover:underline">Join
                     Now</button>
             </div>
         </nav>
@@ -69,12 +69,12 @@
 
             <!-- image -->
              <div class="flex justify-center items-center pt-12">
-                <img src="../assets/about.jpeg" alt="" class="w-[80%] rounded-2xl border-2 border-gray-300 shadow-lg">
+                <img src="../assets/about.jpeg" alt="" class="w-[80%] rounded-2xl border-2 border-gray-300 shadow-lg cursor-pointer">
              </div>
     </section>
 
     <!-- why choose us -->
-    <section class="flex flex-col justify-center items-center gap-6 py-4 bg-test text-text bg-neutralGray text-platinum">
+    <section class="flex flex-col justify-center items-center gap-6 py-4 bg-test text-text bg-neutralGray text-platinum [&>*]:cursor-pointer">
         <h2 class="text-3xl font-semibold">Why Choose Us?</h2>
         <div class="px-4">
             <ul class="w-full flex flex-col lg:flex-row lg:justify-between gap-12">
@@ -100,12 +100,13 @@
 
     <!-- Trainers -->
     <section class="flex flex-col">
-        <div class="bg-lightGray text-darkGray flex flex-col py-8 px-4 justify-center items-center">
+        <div class="bg-lightGray text-darkGray flex flex-col py-8 px-4 justify-center items-center gap-2">
             <h2 class="text-3xl font-semibold">Meet the team</h2>
             <p class="text-lg text-justify">Meet the faces behind the hustle. Each trainer here brings not just expertise, but real energy, motivation, and care to every session. Their mission? Helping you crush your fitness goals and enjoy the process.</p>
         </div>
 
-        <div class="w-full p-6 gap-8 flex flex-col justify-center items-center md:[&>*]:w-[70%] xl:flex-row xl:[&>*]:max-w-[500px]">
+        <div class="w-full p-6 gap-8 flex flex-col justify-center items-center md:[&>*]:w-[70%] xl:flex-row xl:[&>*]:max-w-[500px] xl:[&>*]:transition-transform xl:[&>*]:ease-in-out xl:[&>*]:duration-150 
+  xl:[&>*]:hover:scale-105 [&>*]:cursor-pointer">
             <!-- Trainer -->
             <div class="w-full bg-anotherWhite flex flex-col gap-2 rounded-3xl border border-black shadow-xl shadow-black p-2">
                 <h3 class="text-xl font-semibold">Emily Brooks - HIIT Specialist</h3>
@@ -136,21 +137,21 @@
     <!-- CTA -->
     <div class="w-full flex flex-col justify-center items-center border border-y-gray-500 mt-10 pt-2 p-4 gap-2">
         <p class="text-lg">Still scrolling? Your gains are waiting.</p>
-        <button class="font-bold p-1 hover:outline-2 rounded-3xl w-full text-customWhite bg-customRed cursor-pointer  hover:transition-all hover:ease-in-out hover:duration-150 hover:bg-white hover:text-customRed hover:outline-customRed xl:w-auto xl:text-2xl xl:p-3">Join Now</button>
+        <button class="joinBtn font-bold p-1 hover:outline-2 rounded-3xl w-full text-customWhite bg-customRed cursor-pointer  hover:transition-all hover:ease-in-out hover:duration-150 hover:bg-white hover:text-customRed hover:outline-customRed xl:w-auto xl:text-2xl xl:p-3">Join Now</button>
      </div>
 
     <!-- Footer -->
     <footer class="w-full lg:h-[15vh] p-2 bg-footerColor text-white flex flex-col lg:flex-row gap-4 lg:justify-around lg:items-center">
         <div>
-            <a href="#">
+            <a href="index.html">
                 <h2 class="font-bold text-base lg:text-2xl">Madhyapur Fitness Club</h2>
             </a>
         </div>
         <div class="font-light text-sm flex flex-col gap-1">
             <ul class="flex gap-6 [&>*]:hover:underline">
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
             <p>&copy; 2025 Madhyapur Fitness Club. All rights reserved.</p>
         </div>

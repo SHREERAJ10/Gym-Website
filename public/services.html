@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -27,7 +27,7 @@
     <header id = "navbar-heading" class="bg-snowColor w-full h-18 flex flex-col justify-center sticky top-0 transition-transform duration-300 z-10">
         <nav class="flex justify-between items-center">
             <div class="w-44 sm:w-48 lg:w-52 ml-4">
-                <a href="#">
+                <a href="index.html">
                     <img src="../assets/logo.png" alt="logo" class="w-full">
                 </a>
             </div>
@@ -39,9 +39,9 @@
                 <ul
                     class="inline-flex flex-col gap-y-6 text-3xl ml-6 group [&>*]:hover:underline [&>*]:cursor-pointer mt-6 xl:w-full xl:flex xl:flex-row xl:justify-between xl:items-center xl:m-0 xl:text-xl xl:font-light">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li>Gallery</li>
-                    <li>About</li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
                 </ul>
                 <div id="cross-btn" class="cursor-pointer mr-4 mt-4 xl:hidden">
                     <i class="fa-solid fa-xmark text-white text-4xl sm:text-5xl"></i>
@@ -51,20 +51,22 @@
             <div
                 class="hidden xl:block text-xl hover:transition-transform hover:ease-in-out hover:duration-150 hover:scale-105 mr-4">
                 <button
-                    class="font-medium p-2 border rounded-3xl w-full text-customWhite bg-customRed cursor-pointer hover:underline">Join
+                    class="joinBtn font-medium p-2 border rounded-3xl w-full text-customWhite bg-customRed cursor-pointer hover:underline">Join
                     Now</button>
             </div>
         </nav>
     </header>
     
     <!-- Services -->
-    <main class="w-full flex flex-col items-center bg-snow gap-y-12">
+    <main class="w-full flex flex-col items-center bg-snow">
 
         <!-- main-heading -->
-        <h1 class="text-4xl font-semibold pt-12">Our Services</h1>
-        
+         <div class="w-full p-4 flex justify-center items-center bg-charcoal text-softWhite">
+             <h1 class="text-4xl font-semibold">We Offer:</h1>
+         </div>
+
         <!-- Personal-training -->
-        <div class="w-full grid grid-cols-1 lg:grid-cols-[1fr_auto] grid-rows-2 p-4 bg-lightGray text-darkGray">
+        <div class="w-full grid grid-cols-1 lg:grid-cols-[1fr_auto] grid-rows-2 p-4 bg-lightGray text-darkGray" id="personal-training">
 
             <!-- grid-item-1 -->
             <div class="flex flex-col lg:row-span-2">
@@ -105,25 +107,25 @@
 
                     <p class="italic">Best for individuals who want a focused, efficient, and guided transformation.</p>
                     <button
-                        class="font-medium p-2 border rounded-3xl w-full text-customWhite bg-customRed cursor-pointer hover:underline mt-2 lg:w-44 lg:transition-transform ease-in-out duration-150 lg:hover:scale-105">Join Now</button>
+                        class="joinBtn font-medium p-2 border-2 hover:border-customRed hover:text-customRed hover:bg-lightGray hover:font-semibold rounded-3xl w-full text-customWhite bg-customRed cursor-pointer mt-2 lg:w-44 transition-all ease-in-out duration-150 lg:hover:bg-customRed lg:hover:text-customWhite lg:hover:font-medium lg:hover:underline lg:hover:scale-105">Join Now</button>
                 </div>
             </div>
 
             <!-- grid-item-2 -->
             <div class="lg:row-span-2 flex justify-center items-center lg:justify-end">
                 <div class="w-full flex justify-center items-center lg:w-[80%]">
-                    <img src="../assets/service-1.jpeg" alt="" class="object-cover rounded-2xl border-2 border-gray-300 shadow-lg">
+                    <img src="../assets/service-1.jpeg" alt="" class="object-cover rounded-2xl border-2 border-gray-300 shadow-lg cursor-pointer">
                 </div>
             </div>
         </div>
 
         <!-- Strength-training -->
-        <div class="w-full grid lg:grid-cols-[auto_1fr] grid-rows-2 p-4 gap-y-4 bg-charcoal text-softWhite">
+        <div class="w-full grid lg:grid-cols-[auto_1fr] grid-rows-2 p-4 gap-y-4 bg-charcoal text-softWhite" id="strength-training">
 
             <!-- grid-item-1 -->
             <div class="row-start-2 row-end-3 lg:row-span-2 flex lg:justify-start">
                 <div class="w-full flex justify-center lg:w-[80%]">
-                    <img src="../assets/service-2.webp" alt="" class="object-cover rounded-2xl border-2 border-warmGray shadow-xl">
+                    <img src="../assets/service-2.webp" alt="" class="object-cover rounded-2xl border-2 border-warmGray shadow-xl cursor-pointer">
                 </div>
             </div>
 
@@ -165,14 +167,14 @@
 
                     <p class="italic">Ideal for gym-goers looking to train independently with expert structure.</p>
                     <button
-                        class="font-medium p-2 border rounded-3xl w-full text-customWhite bg-customRed cursor-pointer hover:underline mt-2 lg:w-44 lg:transition-transform ease-in-out duration-150 lg:hover:scale-105">Join Now</button>
+                        class="joinBtn font-medium p-2 border rounded-3xl w-full text-customWhite bg-customRed cursor-pointer mt-2 lg:w-44 hover:border-customRed hover:text-customRed hover:bg-lightGray hover:font-semibold transition-all ease-in-out duration-150 lg:hover:bg-customRed lg:hover:text-customWhite lg:hover:font-medium lg:hover:underline lg:hover:scale-105">Join Now</button>
                 </div>
             </div>
         </div>
 
         <!-- Group-Fitness-Classes -->
 
-        <div class="w-full grid grid-cols-1 lg:grid-cols-[1fr_auto] grid-rows-2 p-4 lg:gap-x-16 bg-lightGray text-darkGray">
+        <div class="w-full grid grid-cols-1 lg:grid-cols-[1fr_auto] grid-rows-2 p-4 lg:gap-x-16 bg-lightGray text-darkGray" id="group-fitness">
 
             <!-- grid-item-1 -->
             <div class="flex flex-col lg:row-span-2">
@@ -213,14 +215,14 @@
 
                     <p class="italic">Best for individuals who want a focused, efficient, and guided transformation.</p>
                     <button
-                        class="font-medium p-2 border rounded-3xl w-full text-customWhite bg-customRed cursor-pointer hover:underline mt-2 lg:w-44 lg:transition-transform ease-in-out duration-150 lg:hover:scale-105">Join Now</button>
+                        class="joinBtn font-medium p-2 border rounded-3xl w-full text-customWhite bg-customRed cursor-pointer mt-2 lg:w-44 hover:border-customRed hover:text-customRed hover:bg-lightGray hover:font-semibold transition-all ease-in-out duration-150 lg:hover:bg-customRed lg:hover:text-customWhite lg:hover:font-medium lg:hover:underline lg:hover:scale-105">Join Now</button>
                 </div>
             </div>
 
             <!-- grid-item-2 -->
             <div class="lg:row-span-2 flex lg:justify-end">
                 <div class="w-full flex  items-center justify-center lg:w-full">
-                    <img src="../assets/service-3.jpeg" alt="" class="object-cover rounded-2xl border-2 border-gray-300 shadow-lg">
+                    <img src="../assets/service-3.jpeg" alt="" class="object-cover rounded-2xl border-2 border-gray-300 shadow-lg cursor-pointer">
                 </div>
             </div>
         </div>
@@ -229,15 +231,15 @@
     <!-- Footer -->
     <footer class="w-full lg:h-[15vh] p-2 bg-footerColor text-white flex flex-col lg:flex-row gap-4 lg:justify-around lg:items-center lg:mt-4">
         <div>
-            <a href="#">
+            <a href="index.html">
                 <h2 class="font-bold text-base lg:text-2xl">Madhyapur Fitness Club</h2>
             </a>
         </div>
         <div class="font-light text-sm flex flex-col gap-1">
             <ul class="flex gap-6 [&>*]:hover:underline">
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
             <p>&copy; 2025 Madhyapur Fitness Club. All rights reserved.</p>
         </div>
