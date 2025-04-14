@@ -3,6 +3,11 @@
 This is a fully responsive practice project for a gym website.
 It has been built using html, tailwind css, and javascript to practice my frontend skills - especially layout, responsiveness, and clean design.
 
+## 🚀 Live Demo
+
+Check out the live demo of the project here:  
+[Gym Website Live Demo](https://madhyapurfitnessclub.netlify.app/)
+
 ## 📄 Pages Included:
 
 1. Home Page: Features a hero section, services preview, testimonials, about, and call-to-action.
